@@ -1,0 +1,37 @@
+\documentclass[12pt]{jarticle}
+
+\usepackage{amssymb}
+
+\begin{document}
+
+\begin{titlepage}
+
+とりあえず, 空芯コイルとして考える (少々乱暴ですが, 「とりあえず」の大雑把な計算ですから). 
+
+{\bf 漏れ磁束を考えない場合.} コイルの巻き幅を $l$ [m], 断面積の平均を $S$ [$\mathrm{m}^{2}$], 空気の透磁率を $\mu_{0}=4\pi\times 10^{-7}$ [H/m] とすると, 磁気抵抗は $R_{\mathrm{m}}=l/(\mu_{0}S)$ である. 巻き数を $N$ とすると, コイルに電流 $I$ [A] が流れるときの起磁力は $NI$ だから, そのときの磁束 $\Phi$ [Wb] は
+\[ \Phi=\frac{NI}{R_{\mathrm{m}}}=\frac{\mu_{0}SNI}{l}. \]
+電流 $I$ の変化に対する自己誘導起電力 $e$ [V] は
+\[ e=-N\frac{d\Phi}{dt}=-\frac{\mu_{0}SN^{2}}{l}\frac{dI}{dt}=-L\frac{dI}{dt} \]
+となる. よって,
+\[ L=\frac{\mu_{0}SN^{2}}{l}\ \mbox{[H]}. \]
+\vspace{7pt}
+
+{\bf 漏れ磁束を考える場合.} 実際には, 上記の最後の式に長岡係数 $\lambda$ がかかる:
+\[ L=\lambda\frac{\mu_{0}SN^{2}}{l}\ \mbox{[H]}. \]
+\vspace{7pt}
+
+{\bf 今回の場合.} 巻き幅を $l=75$ mm とする.
+これと直径 $2r=24$ mm に対する長岡係数を数表\footnote{「長岡係数\ 表」でググってみてください…}から求めたら, $\lambda=0.876829$ であった. また, $S\fallingdotseq 4.5\ \mathrm{cm}^{2}$ である. よって, $L=0.4$ mH となるような $N$ の値を求めると,
+\begin{eqnarray*}
+ & & 0.4\times 10^{-3}=0.876829\times \frac{4\pi\times 10^{-7}\times 4.5\times 10^{-4}}{7.5\times 10^{-2}}\times N^{2} \\
+ & \Rightarrow & N^{2}=\frac{7.5\times 10^{-2}\times 0.4\times 10^{-3}}{0.876829\times 4\pi\times 10^{-7}\times 4.5\times 10^{-4}}\fallingdotseq 60504 \\
+ & \Rightarrow & N\fallingdotseq\sqrt{60504}\fallingdotseq 246.
+\end{eqnarray*}
+まあどうせ, とりあえずの概算だし, $N=250$ ということで.
+
+\end{titlepage}
+
+
+
+
+\end{document}

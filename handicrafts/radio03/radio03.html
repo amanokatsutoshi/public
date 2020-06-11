@@ -1,0 +1,94 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 //EN"
+ "http://www.w3.org/TR/REC-html40/strict.dtd">
+<html lang="ja"> 
+<head>
+<meta http-equiv="Content-Type" content="text/html;
+ charset=Shift_JIS">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<link rel="stylesheet" href="../../white.css" type="text/css">
+<title>ラジオの製作 (その３)</title>
+</head>
+<body>
+<a href="../index.html">Top</a>
+<h1>ラジオの製作（その３）</h1>
+
+<p>
+電験三種の勉強に追われて延び延びになっていましたが、今月からようやく再開です。<br>
+今回は<a href="../radio03/radio03.html">(その３)</a>と<a href="../radio04/radio04.html">(その４)</a>の二回に分けて、小ネタ集の追加とトランジスタ検波一石ラジオの製作を進めていくことにします。<br><br>
+
+※なお、私は電子工作を始めてから間もない初心者です。このページの信頼性についてはその程度の水準とお考えください。参考にされる際は自己責任でお願いします。
+</p>
+
+<h2>１．電灯線アンテナ II</h2>
+
+<p>
+前回ちらっと書いた、「コンデンサをはさむ方」ですが、そちらも試してみました。
+必要なものは、家庭用電源プラグと感電防止用のコンデンサです(100pF, AC125V, DC300V 程度以上, …等と言われているようです)。
+今回私が用意したのはパナソニックの電力用セラミックコンデンサ ECKATS101MB (100pF, 定格電圧 250VAC, 耐電圧 1500VAC)でした。ネット通販で探したらこれが良さそうだったので。<br><br>
+<a href="./plug_and_condenser01.jpg"><img src="./plug_and_condenser01.jpg" width="40%" align="left" hspace="30"></a>
+<a href="./plug_and_condenser02.jpg"><img src="./plug_and_condenser02.jpg" width="30%"></a><br>
+<br><br clear="left">
+
+<a href="./plug_and_condenser03.jpg"><img src="./plug_and_condenser03.jpg" width="30%" align="left" hspace="30"></a>
+まず、安全のため、プラグの片方の金具を取り外します。そして、残った方の金具にコンデンサを取り付け、プラグを閉める……と、ここで思わぬ誤算。プラグにコンデンサが入りきりません。
+仕方がないのでコンデンサ本体がプラグからちょっとはみ出したような形になってしまいました。入れ方が悪いのだろうか？ それとも、もっと大きなプラグを用意するべきだったか…？<br><br>
+
+使用するときは念のため金属の部分を直に触れないようにした方が良いでしょう。
+使用方法については次節の写真を参照してください。
+<br clear="left">
+</p>
+<p>
+(追記) その後、コンデンサをプラグに収めることに成功しました。<br><br>
+<a href="irekata.jpg"><img src="irekata.jpg" width="20%" hspace="20"></a>
+<a href="kezuru.jpg"><img src="kezuru.jpg" width="20%" hspace="20"></a>
+<a href="haitta.jpg"><img src="haitta.jpg" width="20%" hspace="20"></a><br><br>
+
+左から順に、(1) やっぱり入れ方の問題 (2) 上蓋の出っ張りを削る (3) 入った。
+</p>
+<br><br>
+
+<h2>２．簡易アンテナチェッカー</h2>
+
+<p>
+※次のページを参考にさせていただきました: <a href="http://www.ii-okinawa.ne.jp/people/kiyoyuki/index.htm">Kiyoyuki's Craft Room</a><br><br>
+
+上記サイトの中にある、金城清幸氏の考案による「簡易アンテナチェッカー」を作ってみました。次の回路図はほとんど丸写しです。<br><br>
+
+<a href="./antenna_checker_plan.jpg"><img src="./antenna_checker_plan.jpg" width="80%"></a><br><br>
+
+アンテナから信号を受信すると、高周波成分はチョークコイルの方には行かず(まさにそのためにコイルを置くわけです)、そのままダイオードで検波されてクリスタルイヤホンを鳴らす…という、シンプルな構造です(そういえば、以前扱った「大人の科学マガジン Vol.4」の増幅回路にも似たような仕組みが応用されていましたね)。
+同調回路がないので全てのＡＭラジオ放送が混じってしまいますが、ある程度アンテナが良ければ増幅なしで(電池を使わずに)聞くことができます。<br><br>
+
+なお、「チップ」「スリーブ」というのは、モノラルジャックに接続するためのメモです(<a href="../radio02/radio02.html">前回</a>の「フォーンプラグ」の節を参照)。<br><br>
+
+<a href="./antenna_checker01.jpg"><img src="./antenna_checker01.jpg" width="40%" hspace="30"></a>
+<a href="./antenna_checker02.jpg"><img src="./antenna_checker02.jpg" width="40%"></a><br><br>
+
+上の写真は今回の完成図です。実はゲルマニウムダイオードのアノードとカソードの向きが回路図とは逆になっていますが、この場合はどちらでもかまいません。使いやすいようにアンテナ側にはミノムシクリップをつけてみました。
+モノラルジャックにプラグ付きクリスタルイヤホンを接続して使います。<br><br>
+
+<a href="./antenna_checking01.jpg"><img src="./antenna_checking01.jpg" width="40%" hspace="30"></a>
+<a href="./antenna_checking02.jpg"><img src="./antenna_checking02.jpg" width="40%"></a><br><br>
+
+早速、電灯線アンテナで試してみますと……こ、これは面白い！！
+たったこれだけでちゃんとラジオ放送が聞こえるとは驚きです。<br><br>
+
+ちなみに左の電灯線アンテナは前回とは巻く位置が違いますが、こちらの方が使いやすかったです。<br><br>
+
+また、今回(次回も、ですが)二種類の電灯線アンテナを比較してみたところ、予想に反して違いは感じられませんでした(どっちも良いアンテナになっているようです)。きちんと計測すれば違いが出てくるのかもしれませんが、聞いた感じではほとんど変わりません。
+<br><br>
+<a href="./loop_antenna.jpg"><img src="./loop_antenna.jpg" width="40%" align="left" hspace="30"></a>
+それから、ついでに「大人の科学マガジン Vol. 4」のループアンテナでも試してみました。こちらは同調回路に接続しているので、ほとんど基本構成のゲルマラジオそのものと化しています。選局もできますし、写真のように窓からつきだして聞けば、電池なしでもけっこう良く聞こえます。<br><br>
+このキットについていたゲルマニウムダイオードと増幅回路は既に<a href="../radio01/radio01.html">(その１)</a>で私の習作ラジオの餌食となってしまい、残ったループアンテナは眠ったままになっていましたが、また別の機会に活用したくなってきました。(前に「かさばる」とか言ってゴメンナサイ…。)
+<br clear="left"><br>
+</p>
+
+２００７年９月
+<hr>
+<a href="../index.html">トップページ</a>
+
+
+<p> 
+</p>
+</body>
+</html>

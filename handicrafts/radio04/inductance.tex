@@ -1,0 +1,26 @@
+\documentclass[12pt]{jarticle}
+
+\usepackage{amssymb}
+
+\begin{document}
+
+\begin{titlepage}
+
+角速度 $\omega$ の正弦波交流に対する LC 並列回路の(複素)アドミタンスは
+\[ \dot{Y}=j(\omega C-\frac{1}{\omega L}). \]
+(LC 並列回路の) 共振周波数 $f_{0}$ とは、サセプタンスが $0$ になるような (この場合は $\dot{Y}=0$ になるような) 周波数 [Hz] をいう. この条件を数式で表すと,
+\begin{eqnarray*}
+\dot{Y}=0 & \Leftrightarrow & \omega C=\frac{1}{\omega L} \Leftrightarrow 2\pi f_{0}C=\frac{1}{2\pi f_{0} L} \Leftrightarrow f_{0}=\frac{1}{2\pi\sqrt{LC}} \\
+ & \Leftrightarrow & L=\frac{1}{C(2\pi f_{0})^{2}}
+\end{eqnarray*}
+となる.
+
+$C$ が $0$ から $260\times 10^{-12}$ [F] まで変化するとき、$f_{0}$ の動く範囲に $535\times 10^{3}$ [Hz] から $1605\times 10^{3}$ [Hz] までの範囲が含まれるようにしたい. そのためには、$C$ が最大値の $260\times 10^{-12}$ [F] をとるときに $f_{0}=500\times 10^{3}$ [Hz] となるように $L$ の値を定めれば十分である. すなわち,
+\[ L=\frac{1}{260\times 10^{-12}\times(2\pi\times 500\times 10^{3})^{2}}\fallingdotseq 0.4\times 10^{-3}\ \mbox{[H]}\ =0.4\ \mbox{[mH]}. \] 
+
+\end{titlepage}
+
+
+
+
+\end{document}
