@@ -3,60 +3,60 @@
 <html lang="ja"> 
 <head>
 <meta http-equiv="Content-Type" content="text/html;
- charset=Shift_JIS">
+ charset=utf-8">
 <meta http-equiv="Content-Style-Type" content="text/css">
 <link rel="stylesheet" href="../../white.css" type="text/css">
-<title>�t���X�N���C�g���t���X�N���[�U�[�|�C���^�[</title>
+<title>フリスクライト＆フリスクレーザーポインター</title>
 </head>
 <body>
 <a href="../index.html">Top</a>
-<h1>�t���X�N���C�g���t���X�N���[�U�[�|�C���^�[</h1>
+<h1>フリスクライト＆フリスクレーザーポインター</h1>
 
-YouTube �Ńt���X�N���C�g�Ȃ���̂����������̂ł����A�l�b�g�Ō�������ƁA���������b��ɂȂ��Ă���悤�ł��B�����͂ЂƂA�����ł�����Ă݂悤�Ƃ������ƂŁA���ȗ��t���X�N���C�g�ƁA��������p�������[�U�[�|�C���^�[�����삵�Ă݂܂����B<br><br>
+YouTube でフリスクライトなるものを見かけたのですが、ネットで検索すると、けっこう話題になっているようです。ここはひとつ、自分でも作ってみようということで、自己流フリスクライトと、それを応用したレーザーポインターを自作してみました。<br><br>
 
-�Q�l(YouTube ����):<br>
-<a href="http://www.youtube.com/watch?v=iSxHn5zIDJo">�t���X�N��LED���C�g������Ă݂�</a><br>
-<a href="http://www.youtube.com/watch?v=XLkAJTR0Nlo">���ȈՔŁH�t���X�N���C�g</a><br><br>
+参考(YouTube 動画):<br>
+<a href="http://www.youtube.com/watch?v=iSxHn5zIDJo">フリスクでLEDライトを作ってみた</a><br>
+<a href="http://www.youtube.com/watch?v=XLkAJTR0Nlo">超簡易版？フリスクライト</a><br><br>
 
-�����ӎ����Ƃ��񑩂̈ꌾ: ���[�U�[�̌��͖ڂɂ͐�΂ɂ��ĂȂ��悤�ɂ��Ă�������(�����̋��ꂪ����܂�)�B���[�U�[�|�C���^�[�������Ƃ��ɂ͌��̌����ɏ\�����ӂ��܂��傤�B
-���̃y�[�W���Q�l�ɂ����ۂ͎��ȐӔC�ł��肢���܂��B
+※注意事項とお約束の一言: レーザーの光は目には絶対にあてないようにしてください(失明の恐れがあります)。レーザーポインターを扱うときには光の向きに十分注意しましょう。
+このページを参考にされる際は自己責任でお願いします。
 
-<h2>�P�D�t���X�N���C�g</h2>
+<h2>１．フリスクライト</h2>
 
 <p>
 <a href="./FRISK_LED-plan.jpg"><img src="./FRISK_LED-plan.jpg" width="60%" align="left" hspace="30"></a>
-�Ƃ肠�����݌v�}��`���Ă݂܂����B�㑤����H�}�A�����������}(���Ȃ肢���������)�ł��B�m�[�g�̏Ă��ł��͋C�ɂ��Ȃ��ł�������(^^;)<br><br>
+とりあえず設計図を描いてみました。上側が回路図、下側が実装図(かなりいいかげんな)です。ノートの焼け焦げは気にしないでください(^^;)<br><br>
 
-LED ���W���d�� 1.9 V, �W���d�� 20 mA �̂��̂������̂�, ��������Ƃɒ�R�l���v�Z���܂�(�v�Z���璷�Ȃ͎̂��̕Ȃł�(^^;)�B�I�[���̖@����������l�Ȃ�Ή�������Ă��邩�킩��Ǝv���܂�)�B �v����� 20 mA �̓d���������悤�ɂ���Ηǂ��̂ŁA��R�̑���ɒ�d���_�C�I�[�h���Ȃ���@�����邻���ł��B<br><br>
+LED が標準電圧 1.9 V, 標準電流 20 mA のものだったので, それをもとに抵抗値を計算します(計算が冗長なのは私の癖です(^^;)。オームの法則が分かる人ならば何をやっているかわかると思います)。 要するに 20 mA の電流が流れるようにすれば良いので、抵抗の代わりに定電流ダイオードをつなぐ手法もあるそうです。<br><br>
 
-���A�܂��A����Ȍv�Z�����Ȃ��Ă��A�Ⴆ�΃R�C���d�r��{�^���d�r�ɂȂ��̂ł���΁A��R������ɓd�r�ɂ��̂܂� LED ���Ȃ��ł��܂��Ă��ǂ��Ǝv���܂��B���̕������邢���B<br><br>
+が、まあ、そんな計算をしなくても、例えばコイン電池やボタン電池につなぐのであれば、抵抗を介さずに電池にそのまま LED をつないでしまっても良いと思います。その方が明るいし。<br><br>
 
-�t���X�N���C�g�̃|�C���g�́A�X�C�b�`���ǂ����邩�Ƃ�����_�ɐs����Ǝv���܂��B
-��W�ɉ������d���݁A�P�[�X���X���C�h���������ɃX�C�b�`�� ON �ɂȂ�悤�Ȏd�g�݂����Ηǂ��킯�ł��B�����ł́A��W�Ƀ��O���������āA�X�v�����O�ɐڐG������Ƃ������@���Ƃ��Ă��܂��B���@�͂��Ȃ肢��������ł��B<br><br>
+フリスクライトのポイントは、スイッチをどうするかという一点に尽きると思います。
+上蓋に何かを仕込み、ケースをスライドさせた時にスイッチが ON になるような仕組みを作れば良いわけです。ここでは、上蓋にラグ板をくっつけて、スプリングに接触させるという方法をとっています。寸法はかなりいいかげんです。<br><br>
 
-�ォ�甽�Ȃ���ƁA�X�v�����O�͐}��肩�Ȃ�傫�߂Ȃ̂ŁA�d�r�͂��������X�v�����O���痣�ꂽ�Ƃ���ɔz�u����ׂ��ł���(�X�C�b�`�����Ɉ���������\��������)�B
-�ǂ���ɂ���A���܂肱�̕��@�̓X�}�[�g�ł͂Ȃ��悤�ȋC�����܂��B��L����́u���ȈՔŁH�v�̐l�̕����G���K���g�ł��ˁB
+後から反省すると、スプリングは図よりかなり大きめなので、電池はもう少しスプリングから離れたところに配置するべきでした(スイッチ部分に引っかかる可能性がある)。
+どちらにせよ、あまりこの方法はスマートではないような気がします。上記動画の「超簡易版？」の人の方がエレガントですね。
 <br clear="left"><br>
 </p>
 
 <p>
 <a href="./parts.jpg"><img src="./parts.jpg" width="60%" align="left" hspace="30"></a>
-���̎ʐ^�͕��i�ꗗ�ł��B�t���X�N�̃P�[�X�ALED�A��R��A�R�C���d�r(���{�^���d�r�̕����ǂ���������)�A�����O�A�z���f�ޏ��X�A���ꂩ��X�v�����O�c�͗]�����d�r�P�[�X����������������Ƃɂ��܂����B
+左の写真は部品一覧です。フリスクのケース、LED、抵抗器、コイン電池(←ボタン電池の方が良かったかも)、卵ラグ、配線素材少々、それからスプリング…は余った電池ケースから引っこ抜くことにしました。
 <br clear="left"><br>
 </p>
 
 <p>
 <a href="./drill.jpg"><img src="./drill.jpg" width="60%" align="left" hspace="30"></a>
-�܂��ALED �ɍ������傫���̌����P�[�X�ɊJ���܂��B����p�ӂ����̂͒��a 3mm �̂��̂Ȃ̂ŁA3 mm �̃h�������g���܂��B�d���h�������g���Α����ł��傤���A�Ȃ�ƂȂ���Ȃ����������̂ŁA�h�����r�b�g����ŉ񂵂ĊJ���܂����B<br><br>
+まず、LED に合った大きさの穴をケースに開けます。今回用意したのは直径 3mm のものなので、3 mm のドリルを使います。電動ドリルを使えば速いでしょうが、なんとなく危なそうだったので、ドリルビットを手で回して開けました。<br><br>
 
-���������΁A�p�[�c�V���b�v���� LED �̑傫����\���̂Ɂu3�Ӂv�Ƃ��u��3�v�Ə����Ă��邱�Ƃ�����܂����A�u�Ӂv�͒��a��\�����}�L���ŁA�u�܂�v�Ɠǂނ炵���ł�(�u�t�@�C�v�ł͂Ȃ�)�B
+そういえば、パーツショップ等で LED の大きさを表すのに「3φ」とか「φ3」と書いてあることがありますが、「φ」は直径を表す製図記号で、「まる」と読むらしいです(「ファイ」ではなく)。
 <br clear="left"><br>
 </p>
 
 <p>
 <a href="./wiring.jpg"><img src="./wiring.jpg" width="60%" hspace="30"></a>
 <a href="./gutyagutya.jpg"><img src="./gutyagutya.jpg" width="30%"></a><br><br>
-�����āA���i�����炩���߂Ȃ��ł����āc���t����c�B��E�̎ʐ^�͎��t������ł����A����߂ĕ�����ɂ����ł��ˁB�����������͂����Ⴎ����ł�(^^;)�B
+そして、部品をあらかじめつないでおいて…取り付ける…。上右の写真は取り付けた後ですが、きわめて分かりにくいですね。けっこう中はぐちゃぐちゃです(^^;)。
 <br><br>
 </p>
 
@@ -64,41 +64,41 @@ LED ���W���d�� 1.9 V, �W���d�� 20 mA �̂��̂������̂�, ��������Ƃɒ�R�l���v�Z�
 <a href="./finished01.jpg"><img src="./finished01.jpg" width="20%" align="left"></a>
 <a href="./finished02.jpg"><img src="./finished02.jpg" width="20%" align="left" hspace="30"></a>
 <a href="./finished03.jpg"><img src="./finished03.jpg" width="20%" align="left" hspace="30"></a>
-�Ƃ����������B�����A�Ȃ�Ƃ������A�X�C�b�`�̕������A�u�J�`���A�J�`���v�Ƃ��������ł͂Ȃ��u���T�b�A���T�b�v�Ƃ��������ɂȂ��Ă��܂��̂ŁA�ォ��v���ɁA��͂肱�̕��@�͂��܂�ǂ��Ȃ��悤�ȋC�����܂��c�B
+ともかく完成。ただ、なんというか、スイッチの方式が、「カチャ、カチャ」という感じではなく「モサッ、モサッ」という感じになってしまうので、後から思うに、やはりこの方法はあまり良くないような気がします…。
 <br clear="left"><br>
 </p>
 
-<h2>�Q�D�t���X�N���[�U�[�|�C���^�[</h2>
+<h2>２．フリスクレーザーポインター</h2>
 
 <p>
-�ŁA�t���X�N���C�g�� LED ��ԐF���[�U�[�������W���[���ɑウ��΃��[�U�[�|�C���^�[������ł��܂��B�ǂ��炩�Ƃ����Ƃ�����̕������p�̋@��������ł��B<br><br>
+で、フリスクライトの LED を赤色レーザー発光モジュールに代えればレーザーポインターが自作できます。どちらかというとこちらの方が実用の機会が多そうです。<br><br>
 
-�w��\�ȂǂŁA�w���_�̑���Ƀ��[�U�[�|�C���^�[���g���Ă�����i���悭������̂ł����A�m���A�s�̂̃��[�U�[�|�C���^�[�� 2000 �~�`3000 �~���炢����Ǝv���܂��B
-�ԐF���[�U�[�������W���[���͌��� 500 �~���炢�Ŕ����Ă���̂ŁA���삷��΃t���X�N�㍞�݂ł� 1000 �~�ȓ��B�����ł��B���܂��ł���΂̘b�ł����c�B<br><br>
+学会発表などで、指し棒の代わりにレーザーポインターを使っている光景がよく見られるのですが、確か、市販のレーザーポインターは 2000 円〜3000 円くらいすると思います。
+赤色レーザー発光モジュールは現在 500 円くらいで売られているので、自作すればフリスク代込みでも 1000 円以内。お得です。うまくできればの話ですが…。<br><br>
 </p>
 
 <p>
 <a href="./laser_module.jpg"><img src="./laser_module.jpg" width="50%" align="left" hspace="30"></a>
-���̎ʐ^�����̐ԐF���[�U�[�������W���[���ł��B<br><br>
+左の写真がその赤色レーザー発光モジュールです。<br><br>
 
-���[�h�������Ă����̂��ق������Ƃ��āA���ɂ��ɓ������Ă�����A�����O��Ă��܂����̂�(^^;)�A����Ăĕt���������A���̌�ɎB�������́B
+リード線がよれていたのをほぐそうとして、うにうに動かしていたら、線が外れてしまったので(^^;)、あわてて付け直した、その後に撮ったもの。
 <br clear="left"><br>
 </p>
 
 <p>
 <a href="./3pictures.jpg"><img src="./3pictures.jpg" width="60%" align="left" hspace="30"></a>
-��Ǝ����悤�ɂ��Ĕz���B�O�̔��Ȃ𓥂܂��āA�d�r�ƃX�C�b�`���͗����Ă����܂����B<br><br>
-���x�̓P�[�X�̌��͒��a 2 mm �ɂ��Ă��܂��B<br><br>
+上と似たようにして配線。前の反省を踏まえて、電池とスイッチ部は離しておきました。<br><br>
+今度はケースの穴は直径 2 mm にしています。<br><br>
 
-�c���̎ʐ^�����[�U�[�����o���Ă����Ԃł��B�ǂɐԂ��_���f���Ă��܂��B
-���x�����w��Ŕ��\����@������āA����܂łɃR�������Ă��Ȃ���΁A�g���Ă݂����Ǝv���܂��B
+縦長の写真がレーザー光を出している状態です。壁に赤い点が映っています。
+今度何か学会等で発表する機会があって、それまでにコレが壊れていなければ、使ってみたいと思います。
 <br clear="left"><br>
 </p>
 
 <br><br>
-�Q�O�O�V�N�P�O��
+２００７年１０月
 <hr>
-<a href="../index.html">�g�b�v�y�[�W</a>
+<a href="../index.html">トップページ</a>
 
 
 <p> 
